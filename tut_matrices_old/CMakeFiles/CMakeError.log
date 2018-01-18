@@ -1,0 +1,312 @@
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /usr/bin/cc 
+Build flags: 
+Id flags: 
+
+The output was:
+1
+CMakeCCompilerId.c:560:1: fatal error: error closing /tmp/ccZre3eL.s: No space left on device
+ }
+ ^
+compilation terminated.
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /usr/bin/cc 
+Build flags: 
+Id flags: -c
+
+The output was:
+1
+CMakeCCompilerId.c:560:1: fatal error: error closing /tmp/ccYrqCL2.s: No space left on device
+ }
+ ^
+compilation terminated.
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /usr/bin/cc 
+Build flags: 
+Id flags: -Aa
+
+The output was:
+1
+<command-line>:0:1: error: missing '(' after predicate
+CMakeCCompilerId.c:560:1: fatal error: error closing /tmp/cccGUSB4.s: No space left on device
+ }
+ ^
+compilation terminated.
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /usr/bin/cc 
+Build flags: 
+Id flags: -D__CLASSIC_C__
+
+The output was:
+1
+CMakeCCompilerId.c:560:1: fatal error: error closing /tmp/ccCtRHZ7.s: No space left on device
+ }
+ ^
+compilation terminated.
+
+
+Checking whether the C compiler is IAR using "" did not match "IAR .+ Compiler":
+cc: fatal error: no input files
+compilation terminated.
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /usr/bin/c++ 
+Build flags: 
+Id flags: 
+
+The output was:
+1
+CMakeCXXCompilerId.cpp:533:1: fatal error: error closing /tmp/ccj93kkf.s: No space left on device
+ }
+ ^
+compilation terminated.
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /usr/bin/c++ 
+Build flags: 
+Id flags: -c
+
+The output was:
+1
+CMakeCXXCompilerId.cpp:533:1: fatal error: error closing /tmp/ccRWARlI.s: No space left on device
+ }
+ ^
+compilation terminated.
+
+
+Checking whether the CXX compiler is IAR using "" did not match "IAR .+ Compiler":
+c++: fatal error: no input files
+compilation terminated.
+Determining if the C compiler works failed with the following output:
+Change Dir: /home/tinkidinki/oldhome/COLLEGE/Y2,S2/GRAPHICS/tut_matrices/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_43d43/fast"
+/usr/bin/make -f CMakeFiles/cmTC_43d43.dir/build.make CMakeFiles/cmTC_43d43.dir/build
+make[1]: Entering directory '/media/tinkidinki/3e4be9b4-fc47-4c81-808e-1a83eb94f6a6/home/tinkidinki/COLLEGE/Y2,S2/GRAPHICS/tut_matrices/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_43d43.dir/testCCompiler.c.o
+/usr/bin/cc     -o CMakeFiles/cmTC_43d43.dir/testCCompiler.c.o   -c /home/tinkidinki/oldhome/COLLEGE/Y2,S2/GRAPHICS/tut_matrices/CMakeFiles/CMakeTmp/testCCompiler.c
+/home/tinkidinki/oldhome/COLLEGE/Y2,S2/GRAPHICS/tut_matrices/CMakeFiles/CMakeTmp/testCCompiler.c:11:1: fatal error: error closing /tmp/ccUdyG1P.s: No space left on device
+ { (void)argv; return argc-1;}
+ ^
+compilation terminated.
+CMakeFiles/cmTC_43d43.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_43d43.dir/testCCompiler.c.o' failed
+make[1]: *** [CMakeFiles/cmTC_43d43.dir/testCCompiler.c.o] Error 1
+make[1]: Leaving directory '/media/tinkidinki/3e4be9b4-fc47-4c81-808e-1a83eb94f6a6/home/tinkidinki/COLLEGE/Y2,S2/GRAPHICS/tut_matrices/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_43d43/fast' failed
+make: *** [cmTC_43d43/fast] Error 2
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /usr/bin/cc 
+Build flags: 
+Id flags: 
+
+The output was:
+1
+CMakeCCompilerId.c:560:1: fatal error: error closing /tmp/ccDhXm4e.s: No space left on device
+ }
+ ^
+compilation terminated.
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /usr/bin/cc 
+Build flags: 
+Id flags: -c
+
+The output was:
+1
+CMakeCCompilerId.c:560:1: fatal error: error closing /tmp/cc53vBMg.s: No space left on device
+ }
+ ^
+compilation terminated.
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /usr/bin/cc 
+Build flags: 
+Id flags: -Aa
+
+The output was:
+1
+<command-line>:0:1: error: missing '(' after predicate
+CMakeCCompilerId.c:560:1: fatal error: error closing /tmp/ccjejFxg.s: No space left on device
+ }
+ ^
+compilation terminated.
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /usr/bin/cc 
+Build flags: 
+Id flags: -D__CLASSIC_C__
+
+The output was:
+1
+CMakeCCompilerId.c:560:1: fatal error: error closing /tmp/cc3ZveIj.s: No space left on device
+ }
+ ^
+compilation terminated.
+
+
+Checking whether the C compiler is IAR using "" did not match "IAR .+ Compiler":
+cc: fatal error: no input files
+compilation terminated.
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /usr/bin/c++ 
+Build flags: 
+Id flags: 
+
+The output was:
+1
+CMakeCXXCompilerId.cpp:533:1: fatal error: error closing /tmp/ccg5mmom.s: No space left on device
+ }
+ ^
+compilation terminated.
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /usr/bin/c++ 
+Build flags: 
+Id flags: -c
+
+The output was:
+1
+CMakeCXXCompilerId.cpp:533:1: fatal error: error closing /tmp/cce7IOko.s: No space left on device
+ }
+ ^
+compilation terminated.
+
+
+Checking whether the CXX compiler is IAR using "" did not match "IAR .+ Compiler":
+c++: fatal error: no input files
+compilation terminated.
+Determining if the C compiler works failed with the following output:
+Change Dir: /home/tinkidinki/oldhome/COLLEGE/Y2,S2/GRAPHICS/tut_matrices/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_301b5/fast"
+/usr/bin/make -f CMakeFiles/cmTC_301b5.dir/build.make CMakeFiles/cmTC_301b5.dir/build
+make[1]: Entering directory '/media/tinkidinki/3e4be9b4-fc47-4c81-808e-1a83eb94f6a6/home/tinkidinki/COLLEGE/Y2,S2/GRAPHICS/tut_matrices/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_301b5.dir/testCCompiler.c.o
+/usr/bin/cc     -o CMakeFiles/cmTC_301b5.dir/testCCompiler.c.o   -c /home/tinkidinki/oldhome/COLLEGE/Y2,S2/GRAPHICS/tut_matrices/CMakeFiles/CMakeTmp/testCCompiler.c
+/home/tinkidinki/oldhome/COLLEGE/Y2,S2/GRAPHICS/tut_matrices/CMakeFiles/CMakeTmp/testCCompiler.c:11:1: fatal error: error closing /tmp/cc9R1ELq.s: No space left on device
+ { (void)argv; return argc-1;}
+ ^
+compilation terminated.
+CMakeFiles/cmTC_301b5.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_301b5.dir/testCCompiler.c.o' failed
+make[1]: *** [CMakeFiles/cmTC_301b5.dir/testCCompiler.c.o] Error 1
+make[1]: Leaving directory '/media/tinkidinki/3e4be9b4-fc47-4c81-808e-1a83eb94f6a6/home/tinkidinki/COLLEGE/Y2,S2/GRAPHICS/tut_matrices/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_301b5/fast' failed
+make: *** [cmTC_301b5/fast] Error 2
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /usr/bin/cc 
+Build flags: 
+Id flags: 
+
+The output was:
+1
+CMakeCCompilerId.c:560:1: fatal error: error closing /tmp/cckEDu4C.s: No space left on device
+ }
+ ^
+compilation terminated.
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /usr/bin/cc 
+Build flags: 
+Id flags: -c
+
+The output was:
+1
+CMakeCCompilerId.c:560:1: fatal error: error closing /tmp/ccKTCOQE.s: No space left on device
+ }
+ ^
+compilation terminated.
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /usr/bin/cc 
+Build flags: 
+Id flags: -Aa
+
+The output was:
+1
+<command-line>:0:1: error: missing '(' after predicate
+CMakeCCompilerId.c:560:1: fatal error: error closing /tmp/ccCymchE.s: No space left on device
+ }
+ ^
+compilation terminated.
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /usr/bin/cc 
+Build flags: 
+Id flags: -D__CLASSIC_C__
+
+The output was:
+1
+CMakeCCompilerId.c:560:1: fatal error: error closing /tmp/ccaTRcNH.s: No space left on device
+ }
+ ^
+compilation terminated.
+
+
+Checking whether the C compiler is IAR using "" did not match "IAR .+ Compiler":
+cc: fatal error: no input files
+compilation terminated.
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /usr/bin/c++ 
+Build flags: 
+Id flags: 
+
+The output was:
+1
+CMakeCXXCompilerId.cpp:533:1: fatal error: error closing /tmp/ccTpSToK.s: No space left on device
+ }
+ ^
+compilation terminated.
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /usr/bin/c++ 
+Build flags: 
+Id flags: -c
+
+The output was:
+1
+CMakeCXXCompilerId.cpp:533:1: fatal error: error closing /tmp/ccu7nbeA.s: No space left on device
+ }
+ ^
+compilation terminated.
+
+
+Checking whether the CXX compiler is IAR using "" did not match "IAR .+ Compiler":
+c++: fatal error: no input files
+compilation terminated.
+Determining if the C compiler works failed with the following output:
+Change Dir: /home/tinkidinki/oldhome/COLLEGE/Y2,S2/GRAPHICS/tut_matrices/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_4b915/fast"
+/usr/bin/make -f CMakeFiles/cmTC_4b915.dir/build.make CMakeFiles/cmTC_4b915.dir/build
+make[1]: Entering directory '/media/tinkidinki/3e4be9b4-fc47-4c81-808e-1a83eb94f6a6/home/tinkidinki/COLLEGE/Y2,S2/GRAPHICS/tut_matrices/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_4b915.dir/testCCompiler.c.o
+/usr/bin/cc     -o CMakeFiles/cmTC_4b915.dir/testCCompiler.c.o   -c /home/tinkidinki/oldhome/COLLEGE/Y2,S2/GRAPHICS/tut_matrices/CMakeFiles/CMakeTmp/testCCompiler.c
+/home/tinkidinki/oldhome/COLLEGE/Y2,S2/GRAPHICS/tut_matrices/CMakeFiles/CMakeTmp/testCCompiler.c:11:1: fatal error: error closing /tmp/ccH2fHvC.s: No space left on device
+ { (void)argv; return argc-1;}
+ ^
+compilation terminated.
+CMakeFiles/cmTC_4b915.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_4b915.dir/testCCompiler.c.o' failed
+make[1]: *** [CMakeFiles/cmTC_4b915.dir/testCCompiler.c.o] Error 1
+make[1]: Leaving directory '/media/tinkidinki/3e4be9b4-fc47-4c81-808e-1a83eb94f6a6/home/tinkidinki/COLLEGE/Y2,S2/GRAPHICS/tut_matrices/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_4b915/fast' failed
+make: *** [cmTC_4b915/fast] Error 2
+
+
