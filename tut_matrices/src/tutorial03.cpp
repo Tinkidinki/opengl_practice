@@ -82,8 +82,11 @@ int main( void )
 	GLuint programID = LoadShaders( "SimpleTransform.vertexshader", "SingleColor.fragmentshader" );
 
     
+    //-----------MVP for cube-----------------------------------------------------------------------------------
+    
     // Get a handle for our "MVP" uniform
 	GLuint MatrixID = glGetUniformLocation(programID, "MVP");
+    //GLuint MatrixID_triangle = glGetUniformLocation(programID, "MVP_triangle");
 
 	// Projection matrix : 45� Field of View, 4:3 ratio, display range : 0.1 unit <-> 100 units
 	glm::mat4 Projection = glm::perspective(glm::radians(45.0f), 4.0f / 3.0f, 0.1f, 100.0f);
@@ -100,8 +103,12 @@ int main( void )
 	glm::mat4 Model      = glm::mat4(1.0f);
 	// Our ModelViewProjection : multiplication of our 3 matrices
 	glm::mat4 MVP        = Projection * View * Model; // Remember, matrix multiplication is the other way around
+    glm::mat4 MVP_triangle = Model;
+    //----------------------------------------------------------------------------------------------------------
 
-	static const GLfloat g_vertex_buffer_data[] = { 
+	//-------------------MVP for the triangle---------------------------------------------------------------------
+
+    static const GLfloat g_vertex_buffer_data[] = { 
         -1.0f,-1.0f,-1.0f, // triangle 1 : begin
         -1.0f,-1.0f, 1.0f,
         -1.0f, 1.0f, 1.0f, // triangle 1 : end
@@ -180,6 +187,18 @@ int main( void )
         0.982f,  0.099f,  0.879f
     };
 
+    static const GLfloat triangle_vertex_buffer_data[] = {
+       1.0f, 0.0f, 0.0f,
+        0.0f, 1.0f, 0.0f,
+        1.0f, 1.0f, 0.0f
+    };
+
+    static const GLfloat triangle_color_buffer_data[] = {
+        1.0f, 0.0f, 0.0f,
+        0.0f, 1.0f, 0.0f,
+        1.0f, 1.0f, 0.0f
+    };
+
 	// Binding the vertex array
     GLuint vertexbuffer;
 	glGenBuffers(1, &vertexbuffer);
@@ -191,6 +210,19 @@ int main( void )
     glGenBuffers(1, &colorbuffer);
     glBindBuffer(GL_ARRAY_BUFFER, colorbuffer);
     glBufferData(GL_ARRAY_BUFFER, sizeof(g_color_buffer_data), g_color_buffer_data, GL_STATIC_DRAW);
+
+    // Binding the vertex array for the triangle
+    GLuint vertexbuffer_triangle;
+	glGenBuffers(1, &vertexbuffer_triangle);
+	glBindBuffer(GL_ARRAY_BUFFER, vertexbuffer_triangle);
+	glBufferData(GL_ARRAY_BUFFER, sizeof(triangle_vertex_buffer_data), triangle_vertex_buffer_data, GL_STATIC_DRAW);
+
+    // Binding the color array for the trinagle
+     GLuint colorbuffer_triangle;
+	glGenBuffers(1, &colorbuffer_triangle);
+	glBindBuffer(GL_ARRAY_BUFFER, colorbuffer_triangle);
+	glBufferData(GL_ARRAY_BUFFER, sizeof(triangle_color_buffer_data), triangle_color_buffer_data, GL_STATIC_DRAW);
+
 
 	// This is the draw loop, once we've got the data set
     do{
@@ -236,6 +268,39 @@ int main( void )
 
 		glDisableVertexAttribArray(0);
         glDisableVertexAttribArray(1);
+
+        //----------------------------------------------------------------------------------
+
+        glUniformMatrix4fv(MatrixID, 1, GL_FALSE, &MVP_triangle[0][0]);
+
+        glEnableVertexAttribArray(0);
+        glBindBuffer(GL_ARRAY_BUFFER, vertexbuffer_triangle);
+		glVertexAttribPointer(
+			0,                  // attribute. No particular reason for 0, but must match the layout in the shader.
+			3,                  // size
+			GL_FLOAT,           // type
+			GL_FALSE,           // normalized?
+			0,                  // stride
+			(void*)0            // array buffer offset
+		);
+
+        glEnableVertexAttribArray(1);
+        glBindBuffer(GL_ARRAY_BUFFER, colorbuffer_triangle);
+		glVertexAttribPointer(
+			1,                  // attribute. No particular reason for 0, but must match the layout in the shader.
+			3,                  // size
+			GL_FLOAT,           // type
+			GL_FALSE,           // normalized?
+			0,                  // stride
+			(void*)0            // array buffer offset
+		);
+
+        glDrawArrays(GL_TRIANGLES, 0, 3); // 3 indices starting at 0 -> 1 triangle
+
+		glDisableVertexAttribArray(0);
+        glDisableVertexAttribArray(1);
+
+        //---------------------------------------------------------------------------------
 
 		// Swap buffers
 		glfwSwapBuffers(window);
